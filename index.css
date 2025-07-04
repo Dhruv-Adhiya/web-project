@@ -1,0 +1,66 @@
+*{
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.header
+{
+    /* padding-top: 20px; */
+    border: 2px solid black;
+    height: 50px;
+    box-shadow: 2px 2px 2px black;
+    position: static
+    ;
+}
+
+.home
+{
+    margin: 25px 10px 0px 1200px;
+    text-decoration: none;
+
+    
+}
+.login
+{
+    margin: -21px 0px 0px 1300px;
+}
+
+.about
+{
+    margin: -21px 0px 0px 1400px;
+    ;
+}
+
+.logo
+{
+    text-decoration: none;
+    color: black;
+}
+#img
+{
+    margin-top: 5px;
+    width: 1500px;
+}
+#text
+{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+#bold
+{
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+
+.footer
+{
+    background-color: black;
+    height:400px;
+    color:white;
+}
