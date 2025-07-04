@@ -7,6 +7,40 @@
     "wdth" 100;
 }
 
+.header
+{
+    /* padding-top: 20px; */
+    border: 2px solid black;
+    height: 50px;
+    box-shadow: 2px 2px 2px black;
+    position: static
+    ;
+}
+
+.home
+{
+    margin: 25px 10px 0px 1200px;
+    text-decoration: none;
+
+    
+}
+.login
+{
+    margin: -21px 0px 0px 1300px;
+}
+
+.about
+{
+    margin: -21px 0px 0px 1400px;
+    ;
+}
+
+.logo
+{
+    text-decoration: none;
+    color: black;
+}
+
 .input1
 {
     height: 40px;
