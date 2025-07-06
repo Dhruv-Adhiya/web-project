@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editprofile</title>
+    <link rel="stylesheet" href="editprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="home">
+                <a href="view.html" class="logo">
+                <i class="fa-solid fa-house"></i>
+                Home</a>
+            </div>
+            <div class="profile">
+                <a href="profile.html" class="logo">
+                <i class="fa-solid fa-circle-user"></i>
+                Profile</a>
+            </div>
+            <div class="confession">
+                <a href="confession.html" class="logo">
+                <i class="fa-solid fa-comment"></i>
+                confession</a>
+            </div>
+            <div class="about">
+                <a href="about.html" class="logo">
+                <i class="fa-solid fa-user"></i>
+                About Us</a>
+            </div> 
+        </div>
+    </header>
+    <div id="edit">
+        <div>
+            <img src="profilepic.png" alt="profilepic" id="profilepic">
+        </div>
+        <form id="form">
+            <input type="text" id="username" class="input1" placeholder=" username" required>
+            <br>
+            <input type="email" id="email" class="input1" placeholder="email" required>
+            <br>
+            <input type="text" id="name" class="input1" placeholder="name" required>
+            <br>
+            <button type="submit" id="button">Edit Profile</button>
+        </form>
+    </div>
+</body>
+</html>
