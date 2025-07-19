@@ -152,7 +152,7 @@ body::after {
 {
     border: 2px solid #000;
     margin: 50px auto;
-    height: 570px;
+    height: 600px;
     width: 500px;
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
@@ -224,4 +224,11 @@ h1 {
 {
     margin-top: 10px;
     color: #666;
+}
+
+.error
+{
+    color: red;
+    font-size: 0.7em;
+    text-align: center;
 }

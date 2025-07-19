@@ -1,11 +1,12 @@
 *{
-  font-family: "Sour Gummy", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
 
 body {
     background: linear-gradient(135deg, 
@@ -62,11 +63,11 @@ body::after {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
+
 .header
 {
     border: 2px solid rgb(253, 249, 249);
     height: 70px;
-    width: 100%;
     box-shadow: 2px 2px 2px black;
     position: static;
     background: rgba(255, 255, 255, 0.9);
@@ -75,24 +76,17 @@ body::after {
 
 .home
 {
-    margin: 25px 10px 0px 900px;
+    margin: 25px 10px 0px 1050px;
     text-decoration: none;
     
 }
 
-.profile
+.login
 {
-    margin: -21px 0px 0px 1050px;
+    margin: -21px 0px 0px 1200px;
     height: auto;
     width: auto;
     
-}
-
-.confession
-{
-     margin: -21px 0px 0px 1200px;
-    height: auto;
-    width: auto;
 }
 
 .about
@@ -124,22 +118,11 @@ body::after {
     color: white;
 }
 
-h1
+#email
 {
-    text-align: center;
-    color: #ff6b6b;
-    font-size: 2.5em;
-    font-weight: 800;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-#confession
-{
-    height: 150px;
-    width: 800px;
-    margin: 30px 40px 30px 350px;
+    height: 40px;
+    width: 270px;
+    margin: 100px 40px 25px 100px;
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: 0.5s;
@@ -149,7 +132,7 @@ h1
     background: rgba(255, 255, 255, 0.9);
 }
 
-#confession:hover
+#email:hover
 {
     scale: 1.02;
     cursor: pointer;
@@ -157,7 +140,7 @@ h1
     border-color: #ff6b6b;
 }
 
-#confession:focus
+#email:focus
 {
     outline: none;
     border-color: #ff6b6b;
@@ -165,12 +148,11 @@ h1
     scale: 1.02;
 }
 
-
 #button
 {
     height: 45px;
     width: 270px;
-    margin: 30px 40px 30px 620px;
+    margin: 40px 40px 20px 115px;
     border: none;
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -187,4 +169,37 @@ h1
     scale: 1.05;
     box-shadow: 2px 2px 15px rgba(255, 107, 107, 0.5);
     background: linear-gradient(135deg, #ff5252, #ff8a80);
+}
+
+#forgot
+{
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    margin: 80px auto;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    position: relative;
+    z-index: 1;
+}
+
+#forgot:hover
+{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+#text
+{
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 2.2em;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 20px;
 }

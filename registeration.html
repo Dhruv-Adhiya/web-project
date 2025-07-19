@@ -32,23 +32,88 @@
     </header>
     <div id="form1">
         <h1>Create Account</h1>
-        <form>
-            <input type="text" id="username" class="input1" placeholder="enter username">
-            <br>
-            <input type="email" id="email" class="input1" placeholder="enter your email">
-            <br>
-            <input type="text" id="name" class="input1" placeholder="enter your full name">
-            <br>
-            <input type="password" id="password" class="input1" placeholder="create a password">
-            <br>
-            <input type="password" id="password1" class="input1" placeholder="confirm your password">
-            <br>
+        <form id="registerationform" action="">
+            <div>
+                 <input type="text" id="username" class="input1" placeholder="enter username" required>
+                 <div class="error" id="usernameerror"></div>
+            </div>
+            <div>
+                <input type="email" id="email" class="input1" placeholder="enter your email" required>
+                <div class="error" id="emailerror"></div>
+            </div>
+            <div>
+                <input type="text" id="name" class="input1" placeholder="enter your name" required>
+                <div class="error" id="nameerror"></div>
+            </div>
+            <div>
+                <input type="password" id="password" class="input1" placeholder="create a password" required>
+                <div class="error" id="passworderror"></div>
+            </div>
+            <div>
+                <input type="password" id="password1" class="input1" placeholder="confirm your password" required>
+                <div class="error" id="password1error"></div>
+            </div>
             <button type="submit" id="button">Create Account</button>
-            <br>
+           
             <p id="signin">Already Have An account?<a href="login.html">sign in</a></p>
 
         </form>
     </div>
+
+    <script>
+        document.getElementById("registerationform").addEventListener("submit",function(e)
+        {
+            e.preventDefault();
+            document.getElementById("usernameerror").textContent="";
+            document.getElementById("emailerror").textContent="";
+            document.getElementById("nameerror").textContent="";
+            document.getElementById("passworderror").textContent="";
+            document.getElementById("password1error").textContent="";
+
+
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const name = document.getElementById("name").value.trim();
+            const password = document.getElementById("password").value;
+            const password1 = document.getElementById("password1").value;
+
+            let isvalid=true;
+
+            if(username==="")
+            {
+                document.getElementById("usernameerror").textContent = "please enter username";
+                isvalid=false;
+            }
+
+            const emailPattern = /^[^]+@[^]+\.[a-z]{2,3}$/;
+
+            if (!emailPattern.test(email)) 
+            {
+                document.getElementById("emailerror").textContent="enter valid email.";
+                isvalid=false;
+            }
+
+            if (password.length < 6)
+            {
+                document.getElementById("passworderror").textContent="password must be atleast 6 characters."
+                isvalid=false;
+            }
+
+            if(password!==password1)
+            {
+                document.getElementById("password1error").textContent="password do not match.";
+                isvalid=false;
+            }
+
+            if(isvalid)
+            {
+                alert("registration successfully");
+                document.getElementById("registerationform").reset();
+            }
+
+            
+        });
+    </script>
     
 </body>
 </html>
